@@ -3,19 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站</title>
+    <title>我的苹果风格网站</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
-<body>
-    <header>
-        <h1>欢迎来到我的网站</h1>
-    </header>
-    <main>
-        <p>这是一个简单的网页示例。</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 我的网站</p>
+<body class="font-sans bg-white text-gray-900">
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 left-0 w-full bg-white bg-opacity-90 z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-xl font-bold">我的品牌</div>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-600">首页</a></li>
+                <li><a href="#" class="hover:text-gray-600">产品</a></li>
+                <li><a href="#" class="hover:text-gray-600">关于我们</a></li>
+                <li><a href="#" class="hover:text-gray-600">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 全屏英雄区域 -->
+    <section class="h-screen flex items-center justify-center bg-black text-white">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold mb-4">欢迎来到未来</h1>
+            <p class="text-xl mb-8">探索我们的全新产品</p>
+            <a href="#" class="bg-white text-black px-6 py-3 rounded-full text-lg hover:bg-gray-200">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 产品展示区域 -->
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">我们的产品</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/product1.jpg" alt="产品 1" class="w-full h-96 object-cover">
+                        <div class="text-center mt-4">
+                            <h3 class="text-2xl font-bold">产品 1</h3>
+                            <p class="text-gray-600">描述信息</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/product2.jpg" alt="产品 2" class="w-full h-96 object-cover">
+                        <div class="text-center mt-4">
+                            <h3 class="text-2xl font-bold">产品 2</h3>
+                            <p class="text-gray-600">描述信息</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 我的品牌. 保留所有权利.</p>
+        </div>
     </footer>
+
+    <!-- 引入 JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
