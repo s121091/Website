@@ -1,16 +1,3 @@
-// 初始化 Swiper
-const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
-
-// 初始化 GSAP 动画
-gsap.from('h1', { opacity: 0, y: -50, duration: 1, delay: 0.5 });
-gsap.from('p', { opacity: 0, y: 50, duration: 1, delay: 1 });
-
 // 平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -28,6 +15,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // 打字机效果
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('脚本已加载！'); // 检查脚本是否执行
+
     const titleOptions = {
         strings: ['欢迎来到未来'],
         typeSpeed: 100,
