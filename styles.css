@@ -1,62 +1,107 @@
-/* 定义全局 CSS 变量 */
 :root {
-    --warm-bg: #F5F5F5;      /* 温暖的背景色 */
-    --cool-bg: #A5A8B7;      /* 冷色调背景色 */
-    --accent-color: #EEDECD; /* 强调色，暖色调 */
-    --text-color: #333333;   /* 主要文字颜色 */
-    --font-family: 'Inter', sans-serif; /* 全局字体 */
+    --primary-color: #A5A8B7;          /* 主色调：背景、导航栏、大区块 */
+    --accent-color: #EEDECD;           /* 强调色：按钮、标题、高亮元素 */
+    --text-color-dark: #333333;        /* 深色文字：正文、标题 */
+    --text-color-light: #FFFFFF;       /* 浅色文字：深色背景上的文字 */
+    --background-color: #F5F5F5;       /* 背景色：卡片、次要背景 */
+    --secondary-text-color: #6C7A89;   /* 深蓝灰色：边框、次要文字 */
+    --highlight-color: #D4AF37;        /* 金色：高亮、按钮悬停 */
+    --font-family: 'Inter', sans-serif; /* 字体 */
 }
 
 /* 全局样式 */
-body, .swiper-slide {
+body {
     font-family: var(--font-family);
-    background-color: var(--warm-bg);
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
 }
 
+/* 导航栏和页脚 */
 nav, footer {
-    background-color: var(--cool-bg);
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
 }
 
-h1, h2, h3, p, a {
-    color: var(--text-color);
-}
-
-a {
-    color: var(--text-color);
+nav ul li a {
+    color: var(--text-color-light);
     transition: color 0.3s ease;
 }
 
-a:hover {
+nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* Swiper 容器样式 */
-.swiper-container {
-    width: 100%;
-    height: 100%;
+/* 标题和段落 */
+h1, h2, h3 {
+    color: var(--text-color-dark);
 }
 
-/* Swiper 滑块样式 */
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* 背景色已在全局样式中定义 */
+p {
+    color: var(--secondary-text-color);
 }
 
-/* 追加的样式 */
+/* 按钮样式 */
 .btn {
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: var(--text-color-dark);
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: var(--cool-bg);
-    color: #fff;
+    background-color: var(--highlight-color);
+    color: var(--text-color-light);
+}
+
+/* 链接样式 */
+a {
+    color: var(--text-color-dark);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+/* Swiper 容器 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Swiper 滑块 */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--accent-color);
+}
+
+/* 产品卡片 */
+.product-card {
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 产品标题 */
+.product-card h3 {
+    color: var(--text-color-dark);
+}
+
+/* 产品描述 */
+.product-card p {
+    color: var(--secondary-text-color);
 }
 
 /* 响应式导航栏 */
@@ -67,14 +112,12 @@ a:hover {
     }
 }
 
-/* 可访问性焦点样式 */
+/* 可访问性焦点状态 */
 a:focus {
     outline: 2px solid var(--accent-color);
 }
 
 /* 过渡效果 */
-a, .btn {
+a, .btn, .product-card {
     transition: all 0.3s ease;
 }
-
-/* 其他必要的样式，可以根据需要添加 */
