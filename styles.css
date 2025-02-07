@@ -33,3 +33,27 @@ h1, h2, h3, p, a {
 a:hover {
     color: #EEDECD; /* Hover color to add warmth */
 }
+
+body {
+    background-color: #F5F5F5; /* Adding a warm background color */
+}
+
+.swiper-slide {
+    background-color: #EEDECD; /* Adding a warm background color to swiper-slide */
+}
+
+nav {
+    background-color: #A5A8B7; /* Keeping the cool color */
+}
+
+footer {
+    background-color: #A5A8B7; /* Keeping the cool color */
+}
+
+h1, h2, h3, p, a {
+    color: #333333; /* Text color for better contrast */
+}
+
+a:hover {
+    color: #EEDECD; /* Hover color to add warmth */
+}
