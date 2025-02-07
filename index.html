@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站搭建中...</title>
+    <title>欢迎来到我们的官网</title>
+    <!-- SEO 优化 -->
+    <meta name="description" content="我们是一家致力于创新的公司，专注于为用户提供最好的产品和服务。">
+    <meta name="keywords" content="创新, 产品, 服务, 公司">
+    <meta name="author" content="你的公司名称">
+
+    <!-- 引入自定义样式和 Tailwind CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- 引入 Tailwind CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!-- 引入 Typed.js 的样式（如有需要） -->
+    <!-- <link rel="stylesheet" href="path/to/typed.css"> -->
+    <!-- 引入 AOS 动画库的样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- 引入 Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="欢迎来到我们的官网">
+    <meta property="og:description" content="我们是一家致力于创新的公司，专注于为用户提供最好的产品和服务。">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
 </head>
 <body class="font-sans bg-[#F5F5F5] text-[#333333]">
     <!-- 导航栏 -->
     <nav class="fixed top-0 left-0 w-full bg-[#A5A8B7] bg-opacity-90 z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="text-xl font-bold">oops</div>
+            <div class="text-xl font-bold text-white">你的公司名称</div>
             <ul class="flex space-x-6">
                 <li><a href="#home" class="hover:text-[#EEDECD]">首页</a></li>
                 <li><a href="#products" class="hover:text-[#EEDECD]">产品</a></li>
                 <li><a href="#about" class="hover:text-[#EEDECD]">关于我们</a></li>
+                <li><a href="#contact" class="hover:text-[#EEDECD]">联系我们</a></li>
             </ul>
         </div>
     </nav>
@@ -25,7 +45,7 @@
         <div class="text-center">
             <h1 class="text-6xl font-bold mb-4 text-[#333333]" id="typing-title"></h1>
             <p class="text-xl mb-8 text-[#333333]" id="typing-subtitle"></p>
-            <a href="#products" class="bg-[#EEDECD] text-[#333333] px-6 py-3 rounded-full text-lg hover:bg-[#D4AF37] hover:text-white">
+            <a href="#products" class="btn">
                 查看产品
             </a>
         </div>
@@ -35,16 +55,43 @@
     <section id="products" class="py-20">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">我们的产品</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img src="assets/images/product1.jpg" alt="产品 1" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-2xl font-bold mt-4">产品 1</h3>
-                    <p class="text-[#6C7A89]">描述信息</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 产品卡片示例 -->
+                <div class="product-card" data-aos="fade-up">
+                    <img src="assets/images/product1.jpg" alt="产品 1" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mt-4">产品 1</h3>
+                        <p class="mt-2">这是产品 1 的简短描述，突出主要特点。</p>
+                        <p class="text-xl font-bold mt-4 text-[#D4AF37]">￥999</p>
+                        <a href="#" class="btn mt-4">
+                            立即购买
+                        </a>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img src="assets/images/product2.jpg" alt="产品 2" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-2xl font-bold mt-4">产品 2</h3>
-                    <p class="text-[#6C7A89]">描述信息</p>
+                <!-- 可以复制上述结构，添加更多产品 -->
+                <!-- 产品 2 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/product2.jpg" alt="产品 2" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mt-4">产品 2</h3>
+                        <p class="mt-2">这是产品 2 的简短描述，突出主要特点。</p>
+                        <p class="text-xl font-bold mt-4 text-[#D4AF37]">￥1299</p>
+                        <a href="#" class="btn mt-4">
+                            立即购买
+                        </a>
+                    </div>
+                </div>
+                <!-- 产品 3 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/product3.jpg" alt="产品 3" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mt-4">产品 3</h3>
+                        <p class="mt-2">这是产品 3 的简短描述，突出主要特点。</p>
+                        <p class="text-xl font-bold mt-4 text-[#D4AF37]">￥1599</p>
+                        <a href="#" class="btn mt-4">
+                            立即购买
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,21 +101,52 @@
     <section id="about" class="py-20 bg-[#EEDECD]">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-12">关于我们</h2>
-            <p class="text-[#333333] max-w-2xl mx-auto">
+            <p class="text-[#333333] max-w-2xl mx-auto mb-6">
                 我们是一家致力于创新的公司，专注于为用户提供最好的产品和服务。
+            </p>
+            <p class="text-[#333333] max-w-2xl mx-auto">
+                我们的团队由一群充满热情和创造力的专业人士组成，致力于推动行业的发展。自成立以来，我们坚持以客户为中心，不断提升产品质量和用户体验。
             </p>
         </div>
     </section>
 
-    <!-- 页脚 -->
-    <footer class="bg-[#A5A8B7] text-[#333333] py-12">
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20">
         <div class="container mx-auto text-center">
-            <p>&copy; 2023 oops. 保留所有权利.</p>
+            <h2 class="text-4xl font-bold mb-12">联系我们</h2>
+            <form action="#" method="post" class="max-w-md mx-auto">
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="姓名" class="w-full p-3 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="邮箱" class="w-full p-3 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" rows="5" placeholder="留言" class="w-full p-3 border border-gray-300 rounded"></textarea>
+                </div>
+                <button type="submit" class="btn">发送</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-[#A5A8B7] text-[#FFFFFF] py-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 你的公司名称. 保留所有权利.</p>
+            <div class="mt-4">
+                <a href="#" class="mx-2 text-white hover:text-[#D4AF37]"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="mx-2 text-white hover:text-[#D4AF37]"><i class="fab fa-weibo"></i></a>
+                <a href="#" class="mx-2 text-white hover:text-[#D4AF37]"><i class="fab fa-qq"></i></a>
+            </div>
         </div>
     </footer>
 
     <!-- 引入 JavaScript -->
+    <!-- 引入 Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- 引入 AOS 动画库 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 引入自定义脚本 -->
     <script src="script.js"></script>
 </body>
 </html>
