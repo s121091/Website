@@ -24,12 +24,24 @@ body {
     background-color: #EEDECD !important;
 }
 
+.bg-\[\#D4AF37\] {
+    background-color: #D4AF37 !important;
+}
+
 .text-\[\#333333\] {
     color: #333333 !important;
 }
 
-.hover\:text-\[\#EEDECD\]:hover {
-    color: #EEDECD !important;
+.text-\[\#6C7A89\] {
+    color: #6C7A89 !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.hover\:text-\[\#FFFFFF\]:hover {
+    color: #FFFFFF !important;
 }
 
 
