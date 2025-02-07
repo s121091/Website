@@ -1,16 +1,27 @@
-/* 自定义样式 */
-body {
-    font-family: 'Inter', sans-serif;
-}
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
+/* 首页部分 */
+#home {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: #A5A8B7;
+    text-align: center;
+}
+
+/* 产品部分 */
+#products {
+    padding: 5rem 0;
+}
+
+/* 关于我们部分 */
+#about {
+    padding: 5rem 0;
+    background-color: #EEDECD;
+}
+
+/* 页脚部分 */
+footer {
+    padding: 3rem 0;
+    background-color: #A5A8B7;
+    text-align: center;
 }
