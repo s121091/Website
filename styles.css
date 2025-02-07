@@ -15,18 +15,14 @@ body {
     flex-direction: column;
 }
 
-/* 定义金色背景类 */
-.bg-golden {
-    background-color: #D4AF37 !important;
+/* 定义浅金色背景类 */
+.bg-light-golden {
+    background-color: #EEDECD !important;
 }
 
 /* 确保颜色正确应用 */
 .bg-\[\#A5A8B7\] {
     background-color: #A5A8B7 !important;
-}
-
-.bg-\[\#EEDECD\] {
-    background-color: #EEDECD !important;
 }
 
 .text-\[\#333333\] {
