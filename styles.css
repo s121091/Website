@@ -6,7 +6,7 @@
     --text-color-light: #FFFFFF;       /* 浅色文字：白色 */
     --background-color: #111111;       /* 背景色：深灰色 */
     --secondary-text-color: #CCCCCC;   /* 次要文字颜色：浅灰色 */
-    --highlight-color: #FFD700;        /* 金色高亮 */
+    --highlight-color: #EEDECD;        /* 高亮颜色 */
     --font-family: 'Arial', sans-serif; /* 字体 */
 }
 
@@ -34,6 +34,14 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
     color: var(--highlight-color);
+}
+
+/* 响应式导航栏 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* 按钮样式 */
