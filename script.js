@@ -38,17 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 打字机效果
     const titleOptions = {
-        strings: ['欢迎来到未来', '创造属于你的精彩', '科技引领生活'],
-        typeSpeed: 100,
-        backSpeed: 50,
+        strings: ['触碰高贵的质感', '感受优雅的魅力', '静享宁静的时光'],
+        typeSpeed: 80,
+        backSpeed: 40,
         loop: true,
         showCursor: false,
     };
 
     const subtitleOptions = {
-        strings: ['探索我们的全新产品', '体验创新的力量', '加入我们的旅程'],
-        typeSpeed: 80,
-        backSpeed: 40,
+        strings: ['探索我们的精选产品', '体验品质生活', '开启高雅之旅'],
+        typeSpeed: 70,
+        backSpeed: 35,
         startDelay: 500,
         loop: true,
         showCursor: false,
