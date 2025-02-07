@@ -14,32 +14,3 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
-/* 定义浅金色背景类 */
-.bg-light-golden {
-    background-color: #EEDECD !important;
-}
-
-/* 确保颜色正确应用 */
-.bg-\[\#A5A8B7\] {
-    background-color: #A5A8B7 !important;
-}
-
-.text-\[\#333333\] {
-    color: #333333 !important;
-}
-
-.text-\[\#6C7A89\] {
-    color: #6C7A89 !important;
-}
-
-.text-white {
-    color: white !important;
-}
-
-.hover\:text-\[\#FFFFFF\]:hover {
-    color: #FFFFFF !important;
-}
-
-
-
