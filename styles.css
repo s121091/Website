@@ -14,3 +14,23 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+/* 确保颜色正确应用 */
+.bg-\[\#A5A8B7\] {
+    background-color: #A5A8B7 !important;
+}
+
+.bg-\[\#EEDECD\] {
+    background-color: #EEDECD !important;
+}
+
+.text-\[\#333333\] {
+    color: #333333 !important;
+}
+
+.hover\:text-\[\#EEDECD\]:hover {
+    color: #EEDECD !important;
+}
+
+
+
