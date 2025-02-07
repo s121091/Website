@@ -14,3 +14,23 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+/* 导航栏链接样式 */
+nav ul li a {
+    color: #FFFFFF;
+}
+
+nav ul li a:hover {
+    color: #EEDECD;
+}
+
+/* 按钮样式 */
+a.bg-[#EEDECD] {
+    background-color: #EEDECD;
+    color: #333333;
+}
+
+a.bg-[#EEDECD]:hover {
+    background-color: #D4AF37;
+    color: #FFFFFF;
+}
