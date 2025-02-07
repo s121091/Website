@@ -15,6 +15,11 @@ body {
     flex-direction: column;
 }
 
+/* 定义金色背景类 */
+.bg-golden {
+    background-color: #D4AF37 !important;
+}
+
 /* 确保颜色正确应用 */
 .bg-\[\#A5A8B7\] {
     background-color: #A5A8B7 !important;
@@ -22,10 +27,6 @@ body {
 
 .bg-\[\#EEDECD\] {
     background-color: #EEDECD !important;
-}
-
-.bg-\[\#D4AF37\] {
-    background-color: #D4AF37 !important;
 }
 
 .text-\[\#333333\] {
