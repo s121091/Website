@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 打字机效果
     const titleOptions = {
-        strings: ['触碰高贵的质感', '感受优雅的魅力', '静享宁静的时光'],
+        strings: ['欢迎来到我们的世界', '体验非凡的品质', '开启全新旅程'],
         typeSpeed: 80,
         backSpeed: 40,
         loop: true,
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     const subtitleOptions = {
-        strings: ['探索我们的精选产品', '体验品质生活', '开启高雅之旅'],
+        strings: ['探索我们的产品', '感受卓越的服务', '联系我们了解更多'],
         typeSpeed: 70,
         backSpeed: 35,
         startDelay: 500,
