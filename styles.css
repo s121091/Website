@@ -1,33 +1,33 @@
 /* 定义 CSS 变量 */
 :root {
-    --primary-color: #A5A8B7;          /* 主色调：背景、导航栏、大区块 */
-    --accent-color: #EEDECD;           /* 强调色：按钮、标题、高亮元素 */
-    --text-color-dark: #333333;        /* 深色文字：正文、标题 */
-    --text-color-light: #FFFFFF;       /* 浅色文字：深色背景上的文字 */
-    --background-color: #F5F5F5;       /* 背景色：卡片、次要背景 */
-    --secondary-text-color: #6C7A89;   /* 深蓝灰色：边框、次要文字 */
-    --highlight-color: #D4AF37;        /* 金色：高亮、按钮悬停 */
-    --font-family: 'Inter', sans-serif; /* 字体 */
+    --primary-color: #FFFFFF;          /* 主色调：白色背景 */
+    --accent-color: #4B0082;           /* 强调色：靛青色 */
+    --text-color-dark: #333333;        /* 深色文字 */
+    --text-color-light: #FFFFFF;       /* 浅色文字 */
+    --background-color: #F8F8F8;       /* 浅灰色背景 */
+    --secondary-text-color: #666666;   /* 次要文字颜色 */
+    --highlight-color: #B8860B;        /* 金色高亮 */
+    --font-family: '宋体', 'SimSun', serif; /* 字体 */
 }
 
 /* 全局样式 */
 body {
     font-family: var(--font-family);
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--text-color-dark);
     line-height: 1.6;
     font-size: 16px;
 }
 
-/* 导航栏和页脚 */
-nav, footer {
-    background-color: var(--primary-color);
+/* 导航栏 */
+nav {
+    background-color: var(--accent-color);
     color: var(--text-color-light);
 }
 
+/* 导航链接 */
 nav ul li a {
     color: var(--text-color-light);
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover,
@@ -35,41 +35,10 @@ nav ul li a.active {
     color: var(--highlight-color);
 }
 
-/* 响应式导航栏 */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* 首页文字 */
-#home {
-    position: relative;
-    text-align: center;
-    color: var(--text-color-light);
-}
-
-#home::after {
-    content: '';
-    background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#home h1,
-#home p {
-    position: relative;
-    z-index: 1;
-}
-
 /* 按钮样式 */
 .btn {
     background-color: var(--accent-color);
-    color: var(--text-color-dark);
+    color: var(--text-color-light);
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -81,97 +50,18 @@ nav ul li a.active {
     color: var(--text-color-light);
 }
 
-/* 标题和段落 */
-h1, h2, h3 {
+/* 首页打字机效果容器 */
+.typing-container {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 标题和副标题 */
+#typing-title,
+#typing-subtitle {
     color: var(--text-color-dark);
 }
 
-p {
-    color: var(--secondary-text-color);
-}
-
-/* 产品卡片 */
-.product-card {
-    background-color: var(--background-color);
-    color: var(--text-color-dark);
-    border: 1px solid var(--secondary-text-color);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-color: var(--highlight-color);
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-}
-
-.product-card h3 {
-    color: var(--text-color-dark);
-}
-
-.product-card p {
-    color: var(--secondary-text-color);
-}
-
-/* 链接样式 */
-a {
-    color: var(--text-color-dark);
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--highlight-color);
-}
-
-/* 表单样式 */
-input, textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid var(--secondary-text-color);
-    border-radius: 0.25rem;
-    font-family: var(--font-family);
-    color: var(--text-color-dark);
-    background-color: var(--text-color-light);
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: var(--highlight-color);
-}
-
-/* 可访问性焦点状态 */
-a:focus, button:focus, input:focus, textarea:focus {
-    outline: 2px solid var(--highlight-color);
-    outline-offset: 2px;
-}
-
-/* 自定义滚动条 */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--background-color);
-}
-
-/* 过渡效果 */
-a, .btn, .product-card {
-    transition: all 0.3s ease;
-}
-
-/* 动画初始化 */
-[data-aos] {
-    opacity: 0;
-    transition-property: opacity, transform;
-}
+/* 其余样式保持不变或根据需要调整 */
