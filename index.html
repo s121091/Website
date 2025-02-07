@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网站搭建中...</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- 升级 Tailwind CSS 到 3.3.3 版本 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.3/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
 <body class="font-sans bg-[#F5F5F5] text-[#333333]">
     <!-- 导航栏 -->
-    <nav class="fixed top-0 left-0 w-full bg-[#A5A8B7] bg-opacity-90 z-50">
+    <nav class="fixed top-0 left-0 w-full bg-blue-gray bg-opacity-90 z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
             <div class="text-xl font-bold">oops</div>
             <ul class="flex space-x-6">
-                <li><a href="#home" class="hover:text-[#EEDECD]">首页</a></li>
-                <li><a href="#products" class="hover:text-[#EEDECD]">产品</a></li>
-                <li><a href="#about" class="hover:text-[#EEDECD]">关于我们</a></li>
+                <li><a href="#home" class="hover-text-light-gold">首页</a></li>
+                <li><a href="#products" class="hover-text-light-gold">产品</a></li>
+                <li><a href="#about" class="hover-text-light-gold">关于我们</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- 首页 -->
-    <section id="home" class="h-screen flex items-center justify-center bg-[#A5A8B7]">
+    <section id="home" class="h-screen flex items-center justify-center bg-blue-gray">
         <div class="text-center">
             <h1 class="text-6xl font-bold mb-4 text-[#333333]" id="typing-title"></h1>
             <p class="text-xl mb-8 text-[#333333]" id="typing-subtitle"></p>
-            <a href="#products" class="bg-[#EEDECD] text-[#333333] px-6 py-3 rounded-full text-lg hover:bg-[#D4AF37] hover:text-white">
+            <a href="#products" class="bg-light-gold text-[#333333] px-6 py-3 rounded-full text-lg hover-bg-golden-yellow hover:text-white">
                 查看产品
             </a>
         </div>
@@ -52,7 +51,7 @@
     </section>
 
     <!-- 关于我们 -->
-    <section id="about" class="py-20 bg-[#EEDECD]">
+    <section id="about" class="py-20 bg-light-gold">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-12">关于我们</h2>
             <p class="text-[#333333] max-w-2xl mx-auto">
@@ -62,7 +61,7 @@
     </section>
 
     <!-- 页脚 -->
-    <footer class="bg-[#A5A8B7] text-[#333333] py-12">
+    <footer class="bg-blue-gray text-[#333333] py-12">
         <div class="container mx-auto text-center">
             <p>&copy; 2023 oops. 保留所有权利.</p>
         </div>
