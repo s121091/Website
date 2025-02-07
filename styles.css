@@ -36,14 +36,6 @@ nav ul li a.active {
     color: var(--highlight-color);
 }
 
-/* 响应式导航栏 */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 /* 按钮样式 */
 .btn {
     background-color: var(--accent-color);
